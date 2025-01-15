@@ -1,20 +1,28 @@
 body {
   margin: 0;
-  height: 100%;
+  padding: 0;
 }
 .container {
-  height: 100;
-  background-color: hsl(0, 0%, 0%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  position: relative;
 }
-
 .left {
+  position: absolute;
+  left: 0;
   background-color: rgb(255, 255, 255);
   height: 100%;
-  width: 18%;
+  width: 17.5%;
 }
-
-/* .center {
-  background-color: hsl(180, 100%, 50%);
+.right {
+  position: absolute;
   height: 100%;
-  width: 40%;
-} */
+  width: 82.5%;
+  left: 17.5%;
+  background-color: hsl(0, 0%, 0%);
+  overflow: auto;
+  color: white;
+  font-size: 2rem;
+}
